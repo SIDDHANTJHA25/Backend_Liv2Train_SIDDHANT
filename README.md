@@ -6,7 +6,7 @@ It is based on spring MVC ,Spring Boot ,JPA,Hibernate
 # 1.com.trainingcentre:- In this package there is main class TrainingcentreApplication which is executed first when application is started
 
 # 2.com.trainingcentre.controller:-In this package there is controller class MyController which consist of three methods.
-  1.public List<Training> home() :- This method is mapped by @GetMapping("/getTrainingCenter") when Get method is called with /getTrainingCenter link then this method return all the database enteries of training with the help of JpaRepsitory method findAll().
+ # 1.public List<Training> home() :- This method is mapped by @GetMapping("/getTrainingCenter") when Get method is called with /getTrainingCenter link then this method return all the database enteries of training with the help of JpaRepsitory method findAll().
   
   a)If database is empty then it return empty list:
   
@@ -16,7 +16,7 @@ It is based on spring MVC ,Spring Boot ,JPA,Hibernate
   
  ![final](https://user-images.githubusercontent.com/66818761/85323028-effb7a00-b4e4-11ea-8ce3-36617b1abc5a.png)
   
-  2.public Training center(@PathVariable String centername) :-This metod filters information from database,This method is mapped by @GetMapping("/getTrainingCenter/{centername}")when Get method is called with /getTrainingCenter/centername link then this method return single training center information/entry from the database with the help of JpaRepsitory method.
+       2.public Training center(@PathVariable String centername) :-This metod filters information from database,This method is mapped by @GetMapping("/getTrainingCenter/{centername}")when Get method is called with /getTrainingCenter/centername link then this method return single training center information/entry from the database with the help of JpaRepsitory method.
   
   a)writing centername ducait in link then:
   
@@ -27,7 +27,7 @@ It is based on spring MVC ,Spring Boot ,JPA,Hibernate
   ![singlesearch1](https://user-images.githubusercontent.com/66818761/85323536-cabb3b80-b4e5-11ea-96ff-38a07f56b656.png)
 
 
-   3.public Training addCentre(@Valid @RequestBody Training ts):- This method is mapped by @PostMapping(path="/addTrainingcenter") when Post method is called with /addTrainingCenter link then this method save the enteries/training center information in the database using JpaRepository method save().First of all it validate all the field if the field is not proper then it returns message and not saved the information in database
+    3.public Training addCentre(@Valid @RequestBody Training ts):- This method is mapped by @PostMapping(path="/addTrainingcenter") when Post method is called with /addTrainingCenter link then this method save the enteries/training center information in the database using JpaRepository method save().First of all it validate all the field if the field is not proper then it returns message and not saved the information in database and return the response in json.
   
   a)validating centercode:
   
@@ -40,3 +40,21 @@ It is based on spring MVC ,Spring Boot ,JPA,Hibernate
   c)validating email:
   
 ![email(validation_error)](https://user-images.githubusercontent.com/66818761/85324146-eecb4c80-b4e6-11ea-8a68-275ecf0a3aee.png)
+
+  d)If email already present in the database then it not save the post request
+  
+  If all validation performs successfully then the enteries stored in database
+  
+  a)Storing centername ducait:
+  
+  
+![afterInsertion](https://user-images.githubusercontent.com/66818761/85324509-99436f80-b4e7-11ea-8488-1650abf03a71.png)
+
+
+![afterInsertion1](https://user-images.githubusercontent.com/66818761/85324514-9d6f8d00-b4e7-11ea-92b3-ea273cef43a6.png)
+
+  b)Storing centername STG:
+  
+![afterInsertion2](https://user-images.githubusercontent.com/66818761/85324525-a1031400-b4e7-11ea-91af-ddcf7cd476e8.png)
+
+![afterInsertion3](https://user-images.githubusercontent.com/66818761/85324549-abbda900-b4e7-11ea-969b-15a421375c84.png)
