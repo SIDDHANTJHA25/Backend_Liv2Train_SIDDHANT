@@ -83,4 +83,20 @@ It is based on spring MVC ,Spring Boot ,JPA,Hibernate
  
 ![afterCourse(table)](https://user-images.githubusercontent.com/66818761/85325148-c5132500-b4e8-11ea-9679-9a8b5e726c81.png)
 
+ # 4.com.trainingcentre.entity:- This package contains two classes:
  
+ 1)Training.java: It is an entity class followed by @Entity and contains all important field.
+ 
+ 2)Address.java: It is an embeddable class.
+ 
+ # 5.com.trainingcentre.exception:- This package contains two classes for handling global exception and validation related exception:
+ 
+ 1)ErrorDetails.java
+ 
+ 2)GlobalExceptionHandler.java
+
+# For the database properties and port properties,hibernate and etc all are mention in application.properties
+
+![applicationProperties](https://user-images.githubusercontent.com/66818761/85326211-8c744b00-b4ea-11ea-98a4-981ae0c7b001.png)
+
+# All the maven dependency is in pom.xml
