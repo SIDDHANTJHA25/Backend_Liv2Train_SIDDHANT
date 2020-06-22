@@ -58,3 +58,29 @@ It is based on spring MVC ,Spring Boot ,JPA,Hibernate
 ![afterInsertion2](https://user-images.githubusercontent.com/66818761/85324525-a1031400-b4e7-11ea-91af-ddcf7cd476e8.png)
 
 ![afterInsertion3](https://user-images.githubusercontent.com/66818761/85324549-abbda900-b4e7-11ea-969b-15a421375c84.png)
+
+
+# 3.com.trainingcentre.dao :- This package contains interface TrainingDao which  extends JpaRepository<Training, String> where Training is entity class and String is primary key datatype.The Two tables are created with orm hibernate and jpa:
+ 1)Training
+ 2)Course(one-many)
+ 
+ Initially all the enteries in database are null:
+ a)Training table.
+ 
+ ![training(table)](https://user-images.githubusercontent.com/66818761/85325111-b462af00-b4e8-11ea-97bc-f16c75f37bc4.png)
+
+ b)Course table.
+ 
+ ![Course(table)](https://user-images.githubusercontent.com/66818761/85325128-ba589000-b4e8-11ea-9578-19d854f5874a.png)
+ 
+ After the insertion with post request all the enteries are saved in database and the tables look like:
+ a)Training table.
+ 
+ 
+![afterTraining(table)](https://user-images.githubusercontent.com/66818761/85325138-c04e7100-b4e8-11ea-85dd-0d2722fe77f4.png)
+
+ b)Course table.
+ 
+![afterCourse(table)](https://user-images.githubusercontent.com/66818761/85325148-c5132500-b4e8-11ea-9679-9a8b5e726c81.png)
+
+ 
