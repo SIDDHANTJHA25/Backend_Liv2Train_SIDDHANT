@@ -1,5 +1,5 @@
 # Backend_Liv2Train_SIDDHANT
-It is based on spring MVC ,Spring Boot ,JPA,Hibernate
+It is Restful Web Service API Project based on spring MVC ,Spring Boot ,JPA,Hibernate
 the tool used for api testing is postman.
 
 # The whole project structure is as follows:
