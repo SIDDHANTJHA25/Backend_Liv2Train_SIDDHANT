@@ -1,5 +1,10 @@
 # Backend_Liv2Train_SIDDHANT
 It is based on spring MVC ,Spring Boot ,JPA,Hibernate
+the tool used for api testing is postman.
+
+# The whole project structure is as follows:
+
+![projectStructure](https://user-images.githubusercontent.com/66818761/85326448-f12fa580-b4ea-11ea-812b-4a8b4f7ddfa3.png)
 
 # It consist of Five packages:
 
