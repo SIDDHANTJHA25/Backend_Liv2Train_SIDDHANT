@@ -27,9 +27,9 @@ public class MyController {
 	
 	
 	
-	
+	//Autowiring TrainingDao interface for performing database related operations
 	@Autowired
-    private TrainingDao trainingRepository;
+        private TrainingDao trainingRepository;
 
 	//Get request for getting/fetching all the Training center details present in database
 	@GetMapping("/getTrainingCenter")
