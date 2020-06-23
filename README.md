@@ -32,7 +32,9 @@ the tool used for api testing is postman.
   ![singlesearch1](https://user-images.githubusercontent.com/66818761/85323536-cabb3b80-b4e5-11ea-96ff-38a07f56b656.png)
 
 
-    3.public Training addCentre(@Valid @RequestBody Training ts):- This method is mapped by @PostMapping(path="/addTrainingcenter") when Post method is called with /addTrainingCenter link then this method save the enteries/training center information in the database using JpaRepository method save().First of all it validate all the field if the field is not proper then it returns message and not saved the information in database and return the response in json.
+    3.public Training addCentre(@Valid @RequestBody Training ts):-
+    
+    This method is mapped by @PostMapping(path="/addTrainingcenter") when Post method is called with /addTrainingCenter link then this method save the enteries/training center information in the database using JpaRepository method save().First of all it validate all the field if the field is not proper then it returns message and not saved the information in database and return the response in json and user not have to give createdon date because it is system generated epoch time.
     
   a)validating centername:
   
