@@ -33,20 +33,25 @@ the tool used for api testing is postman.
 
 
     3.public Training addCentre(@Valid @RequestBody Training ts):- This method is mapped by @PostMapping(path="/addTrainingcenter") when Post method is called with /addTrainingCenter link then this method save the enteries/training center information in the database using JpaRepository method save().First of all it validate all the field if the field is not proper then it returns message and not saved the information in database and return the response in json.
+    
+  a)validating centername:
   
-  a)validating centercode:
+![centerName(validation_error)](https://user-images.githubusercontent.com/66818761/85360187-08e04b80-b536-11ea-9cfa-7fd1adb3dff9.png)
+
+  
+  b)validating centercode:
   
 ![centerCode(validation_error)](https://user-images.githubusercontent.com/66818761/85324120-e410b780-b4e6-11ea-9789-c3389eadc58c.png)
 
-  b)validating contactphone:
+  c)validating contactphone:
   
 ![phoneNo(validation_error)](https://user-images.githubusercontent.com/66818761/85324132-ea069880-b4e6-11ea-8d38-9ddbdb049950.png)
 
-  c)validating email:
+  d)validating email:
   
 ![email(validation_error)](https://user-images.githubusercontent.com/66818761/85324146-eecb4c80-b4e6-11ea-8a68-275ecf0a3aee.png)
 
-  d)If email already present in the database then it not save the post request
+  e)If email already present in the database then it not save the post request
   
   If all validation performs successfully then the enteries stored in database
   
