@@ -8,9 +8,9 @@ the tool used for api testing is postman.
 
 # It consist of Five packages:
 
-# 1.com.trainingcentre:- In this package there is main class TrainingcentreApplication which is executed first when application is started
+# 1.com.trainingcentre:- In this package there is main class TrainingcentreApplication from where application is started.
 
-# 2.com.trainingcentre.controller:-In this package there is controller class MyController which consist of three methods.
+# 2.com.trainingcentre.controller:-In this package there is controller class MyController it is mapped by @RestController which takes care of mapping request data to the defined request handler methods and MyController class consist of three methods.
  # 1.public List<Training> home() :-
  
       This method is mapped by @GetMapping("/getTrainingCenter") when Get method is called with /getTrainingCenter link then this method return all the database enteries of training with the help of JpaRepsitory method findAll().
